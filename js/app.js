@@ -6,10 +6,7 @@ const modalEnd = document.querySelector(".game_over");
 const btnReplay = document.querySelector(".btn_replay");
 
 
-
-
 //Start Game
-
 btn.onclick = function startGame(){
     modal.classList.add("hide");
     overlay.classList.add("hide");
@@ -41,8 +38,8 @@ var Enemy = function(x, y, speed) {
 
     // The image/sprite for our enemies, this uses
     // a helper we've provided to easily load images
-
 };
+
 
 // Update the enemy's position, required method for game
 // Parameter: dt, a time delta between ticks
@@ -61,6 +58,7 @@ Enemy.prototype.update = function(dt) {
     }
 };
 
+
 // Draw the enemy on the screen, required method for game
 Enemy.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
@@ -69,6 +67,7 @@ Enemy.prototype.render = function() {
 // Now write your own player class
 // This class requires an update(), render() and
 // a handleInput() method.
+
 
 //Hero class
 class Hero {
@@ -88,8 +87,6 @@ class Hero {
     render() {
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
     }
-
-
 
     //Handle keyboard keys and update player's position
     /*
@@ -135,8 +132,6 @@ class Hero {
         }
     }
 
-
-
     //Reset Hero
     reset() {
         // Set x and y to starting x and y
@@ -145,11 +140,6 @@ class Hero {
     }
 
 }
-
-
-
-
-
 
 
  const player = new Hero();
@@ -162,14 +152,7 @@ class Hero {
 
  console.log(allEnemies);
 
-
-
-
-
 // Reset player to original position
-
-
-
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
