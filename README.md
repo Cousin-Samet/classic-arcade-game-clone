@@ -3,17 +3,15 @@
 ## Table of Contents
 
 - [Instructions](#instructions)
-- [Contributing](#contributing)
+- [Contributing](#contributing) 
 
 ## Instructions
 
-Use this [rubric](https://review.udacity.com/#!/rubrics/15/view) for self-checking your submission.
+1. HOW TO RUN
+Start the app by opening the Index.html file in your favourite browser. Once open follow the instructions on screen and enjoy the game.
 
-Make sure the functions you write are **object-oriented** - either class functions (like `Player` and `Enemy`) or class prototype functions such as `Enemy.prototype.checkCollisions`. Also make sure that the keyword `this` is used appropriately within your class and class prototype functions to refer to the object the function is called upon.
-
-Your **README.md** file should be updated with instructions on both how to 1. Run and 2. Play your arcade game.
-
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+2. HOW TO PLAY
+Use the arrow keys to move up, down, left, right to navigate your way across the road to the river. Watch out for cockroaches along the path!! getting hit by a cockroach will make your hero restart back on the grass. Get to the river to win!!
 
 ## Contributing
 
