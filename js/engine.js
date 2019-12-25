@@ -25,17 +25,15 @@ var Engine = (function(global) {
         lastTime,
         id;
 
-
-
     canvas.width = 505;
     canvas.height = 606;
     doc.body.appendChild(canvas);
 
-
-
     /* This function serves as the kickoff point for the game loop itself
      * and handles properly calling the update and render methods.
      */
+    
+    
     function main() {
         /* Get our time delta information which is required if your game
          * requires smooth animation. Because everyone's computer processes
@@ -61,14 +59,8 @@ var Engine = (function(global) {
          * function again as soon as the browser is able to draw another frame.
          */
 
-
-
-
         if (player.victory === true){
             win.cancelAnimationFrame(id);
-
-
-
         }
         else {
         id = win.requestAnimationFrame(main);
@@ -94,6 +86,7 @@ var Engine = (function(global) {
      * functionality this way (you could just implement collision detection
      * on the entities themselves within your app.js file).
      */
+    
     function update(dt) {
         updateEntities(dt);
         // checkCollisions();
